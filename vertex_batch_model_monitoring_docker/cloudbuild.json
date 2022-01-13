@@ -1,0 +1,20 @@
+{
+  "steps": [
+   {
+      "name": "gcr.io/cloud-builders/docker",
+      "args": [
+          "build",
+          "-t",
+          "gcr.io/my-project/vertex_batch_model_monitoring_image:latest",
+          "."
+       ]
+   },
+   {
+       "name": "gcr.io/cloud-builders/docker",
+       "args": [
+          "push",
+          "gcr.io/my-project/vertex_batch_model_monitoring_image:latest"
+        ]
+   }
+  ]
+}
